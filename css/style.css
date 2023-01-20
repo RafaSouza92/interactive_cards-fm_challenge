@@ -206,8 +206,8 @@ img {
 @media (max-width: 440px) {
   .bg-main-content {
     background: url("/images/bg-main-mobile.png");
-    background-position: top center;
-    background-size: initial;
+    background-position: top;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
     padding: 20px;
