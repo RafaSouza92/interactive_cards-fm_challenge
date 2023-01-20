@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="bg-main-content">
+      <div class="cards">
+        <div class="card-front">
+          <div class="card-logo"></div>
+          <p class="card-display">0000 0000 0000 0000</p>
+          <div class="card-info-container">
+            <span class="card-front-name">Jane Appleseed</span>
+            <span class="card-front-date">00/00</span>
+          </div>
+        </div>
+        <div class="card-back">
+          <p class="card-back-cvc">000</p>
+        </div>
+      </div>
+      <div class="card-info">
+        <form action="" class="form">
+          <label for=""
+            >Cardholder Name
+            <input
+              type="text"
+              class="cardholder-name"
+              placeholder="e.g. Jane Appleseed"
+            />
+          </label>
+
+          <label for="">
+            Card Number
+            <input
+              type="text"
+              class="card-number"
+              placeholder=" e.g. 1234 5678 9123 0000 "
+            />
+            <span class="number-error"></span>
+          </label>
+          <div class="mm-yy-cvc">
+            <label for=""
+              >Exp. Date (MM/YY)
+              <input type="text" class="month" placeholder="MM " />
+              <input type="text" class="year" placeholder="YY" />
+              <span class="date-error"></span>
+            </label>
+            <label for=""
+              >CVC
+              <input type="text" placeholder="e.g. 123 " class="cvc" />
+              <span class="cvc-error"></span>
+            </label>
+          </div>
+          <button class="confirm">Confirm</button>
+        </form>
+        <div class="completed-state">
+          <svg
+            width="80"
+            height="80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="40" cy="40" r="40" fill="url(#a)" />
+            <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+            <defs>
+              <linearGradient
+                id="a"
+                x1="-23.014"
+                y1="11.507"
+                x2="0"
+                y2="91.507"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#6348FE" />
+                <stop offset="1" stop-color="#610595" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <h2>Thank you!</h2>
+          <p>We've added your card details</p>
+          <button class="continue">Continue</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
