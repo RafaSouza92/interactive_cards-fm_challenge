@@ -35,7 +35,11 @@
           <p class="card-display">0000 0000 0000 0000</p>
           <div class="card-info-container">
             <span class="card-front-name">Jane Appleseed</span>
-            <span class="card-front-date">00/00</span>
+            <div class="date-conatiner">
+              <span class="card-front-date-month">00</span>
+              <span>/</span>
+              <span class="card-front-date-year">00</span>
+            </div>
           </div>
         </div>
         <div class="card-back">
@@ -59,19 +63,43 @@
               type="text"
               class="card-number"
               placeholder=" e.g. 1234 5678 9123 0000 "
+              maxlength="16"
+              minlength="16"
+              required
             />
             <span class="number-error"></span>
           </label>
           <div class="mm-yy-cvc">
             <label for=""
               >Exp. Date (MM/YY)
-              <input type="text" class="month" placeholder="MM " />
-              <input type="text" class="year" placeholder="YY" />
+              <input
+                type="text"
+                class="month"
+                placeholder="MM "
+                maxlength="2"
+                minlength="2"
+                required
+              />
+              <input
+                type="text"
+                class="year"
+                placeholder="YY"
+                maxlength="2"
+                minlength="2"
+                required
+              />
               <span class="date-error"></span>
             </label>
             <label for=""
               >CVC
-              <input type="text" placeholder="e.g. 123 " class="cvc" />
+              <input
+                type="text"
+                placeholder="e.g. 123 "
+                class="cvc"
+                maxlength="3"
+                minlength="3"
+                required
+              />
               <span class="cvc-error"></span>
             </label>
           </div>
